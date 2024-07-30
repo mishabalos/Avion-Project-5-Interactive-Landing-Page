@@ -1,0 +1,1081 @@
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000 */
+
+.nunito-<uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*<uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+.fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER SECTION: NAVBAR */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  padding: 20px 100px; 
+  background-color: white;
+  font-size: 2rem; 
+  z-index: 1;
+}
+
+#nav-bar {
+  width: 100%;
+}
+
+
+#nav-bar, #nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Fredoka", sans-serif;
+  color: #777777;
+}
+
+#nav-links a:hover {
+  color: #89E219;
+}
+
+.nav-link {
+  margin-left: 80px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #777777;
+}
+
+#lang-menu {
+  position: relative; 
+}
+
+#selected-lang {
+  display: flex;
+  justify-content: space-between; 
+  cursor: pointer;
+}
+
+#lang-menu ul {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: 1px solid white;  
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 150px;
+  padding-left: 10px;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.language:hover {
+  color: #89E219;
+}
+
+#lang-menu ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+#lang-menu ul li a {
+  padding: 5px 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: #777777;
+  vertical-align: middle;
+}
+
+#lang-menu ul li a:hover {
+  color: #89E219;
+  background-color: #FFFFFF;
+}
+
+#lang-menu:hover ul{
+   display: block;
+}
+
+#lang-menu:hover ul li{
+   display: block;
+}
+
+/* MAIN SECTION:  */
+
+#main-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#58CC02, #58CC02, #89E219,#ffffff);
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  width: 50%; 
+  padding-left: 50px;
+}
+
+#main-message {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10rem;
+  color: white;
+  letter-spacing: 0.4px;
+  line-height: 0.9;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#main-subtitle {
+  font-family: Nunito;
+  font-optical-sizing: auto;
+  font-style: bold;
+  font-size: 3rem;
+  color: #777777;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#main-buttons {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+
+#start-learning, #account-login {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  width: 400px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px 0px #777777;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#start-learning {
+  background-color: #ffffff;
+  color: #58cc02;
+}
+
+#account-login  {
+  background-color: #58cc02;
+  color: #ffffff;
+}
+
+#start-learning:hover {
+  background-color: #e8e3e3;
+}
+
+#account-login:hover {
+  background-color: #6df505;
+}
+
+/* font-family: "Fredoka", sans-serif; */
+
+#hi {
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  color: #58cc02;
+  letter-spacing: 1.5px;
+  background-color: white;
+  width: 250px;
+  margin: 10px auto;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 30px;
+  top: 55px;
+  box-shadow: 0px 5px 0px 0px #777777;
+}
+
+#hi::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 40px;
+  height: 20px;
+  width: 20px;
+  background: inherit;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  box-shadow: 0px 5px 0px 0px #777777;
+}
+
+#duo-gym {
+  width: 500px;
+  height: auto;
+}
+
+/* ABOUT SECTION:  */
+
+#about-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-class1, .about-class2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-text1, .about-text2 {
+  width: 50%;
+}
+
+.about-heading {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color:#58cc02;
+}
+
+.about-subtitle {
+  font-family: nunito;
+  font-size: 2rem;
+  color: #777777;
+}
+
+.about-video img {
+  width: 350px;
+  height: 700px;
+} 
+
+#motivation-img img {
+  width: 200%;
+  display:block;
+  position: relative;
+  left: -100%;
+}
+
+#motivation-img {
+  overflow: hidden;
+  width: 450px;
+  position: relative;
+}
+
+/* CHANGE COLOR SECTION */
+
+#changeColor,
+#changeColor::before, #changeColor::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffff;
+  text-align: center;
+  width: 100%;
+  height: 900px;
+}
+
+.btn {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ffff;
+  background-color: #feac32;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border-color: #feac32;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#ffcc4c, #f89808);
+}
+
+
+/* LANGUAGE SECTION */
+
+#languages-section {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+  background-image: url(https://laminapp.com/Centrum/Apps/Duolingo/71_17_145_Graphics/93_12_276_Backgrounds/Background_source.svg);
+  background-position: center;
+}
+
+#language-options {
+  color: #ffffff;
+  font-family: Nunito;
+  font-style: bold;
+  font-size: 3rem;
+  padding-top: 50px;
+}
+
+.grid-lang {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  color: #ffffff;
+  font-family: Nunito;
+  font-style: bold;
+  font-size: 2rem;
+}
+
+.grid-lang-item {
+  width: 25%;
+  height: 25%;
+  text-align: center;
+}
+
+.grid-lang-sub {
+  font-size: 1.3rem;
+}
+
+.grid-lang-item:hover {
+  color: #89E219;
+  cursor: pointer;
+}
+
+/* DOWNLOAD SECTION */
+
+#download-section {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#download-options {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: #43c000;
+  line-height: 0.9;
+  text-align: center;
+}
+
+#download-on {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+#appstore, #google {
+  font-size: 2rem;
+}
+
+.download-buttons {
+  background: white;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 1px solid tan;
+  border-radius: 15px;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.download-buttons:hover {
+  background-color: #eae6e6;
+}
+
+#download-on {
+  display: flex;
+  flex-direction: column; 
+}
+
+#appstore, #google {
+  font-style: bold;
+  font-size: 2rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #afafaf;
+}
+/* STORIES SECTION */
+
+#stories-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(white,#89e219,#58CC02);
+  padding-bottom: 40px;
+}
+
+#stories-text {
+  font-family: Nunito;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#stories-text p {
+  font-size: 1.8rem;
+  padding-bottom: 40px;
+}
+
+.embed-video {
+  border-radius: 10px;
+}
+
+.stories-video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.stories-subtitle {
+  font-family: nunito;
+  font-size: 2rem;
+  margin-left: 20px;
+  width: 400px;
+}
+
+/* FOOTER SECTION */
+
+.h {
+  background-color: #f7f7f7;
+  height: 2px;
+  border: none;
+}
+
+footer {
+  background-color: #58CC02;
+}
+
+#footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-header {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.4rem;
+  color: #f7f7f7;
+  letter-spacing: 1px;
+}
+
+.footer-content {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  color: #a5ed6e;
+  padding-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.footer-content p {
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+/* SUBMIT FORM: */
+
+#create-profile {
+  box-sizing: border-box;
+  width: 100%;
+  height: 800px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 180px;
+  margin-top: 50px;
+}
+
+#form-header {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.5rem;
+  letter-spacing: 1.2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.6rem;
+  max-width: 500px;
+}
+
+form p {
+  font-style: bold;
+  font-size: 1.3rem;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+#form-container input {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  border: 1px solid #afafaf;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  color: #4b4b4b;
+}
+
+#submit {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: #1cb0f6;
+  box-shadow: 0px 5px 0px 0px #2b70c9;
+  cursor: pointer;
+  border-radius: 15px !important;
+}
+
+#submit:hover {
+  background-color: #6cd0fe;
+}  
+
+.login button {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: #1cb0f6;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 0px 0px #777777;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 90px;
+  height: 40px;
+  border: 1px solid #afafaf;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.login button:hover {
+  background-color: #e5e5e5;
+}  
+
+/* thank you */
+
+#ty-body {
+  background-color: #58CC02;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ty-message {
+    font-size: 3rem;
+    margin: 50px auto 0px;
+    font-family: "Fredoka", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+#login button {
+  font-family: "Fredoka", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #1cb0f6;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 0px 0px #777777;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 50px;
+  border: 1px solid #afafaf;
+  text-align: center;
+  margin: 30px auto;
+}
+
+#login button:hover {
+  background-color: #e5e5e5;
+}  
+
+@media (max-width: 1024px) {
+
+  #message {
+    width: 40%; 
+  }
+
+  #main-message {
+    font-size: 8rem;
+  }
+
+  #main-subtitle {
+    font-size: 2rem;
+  }
+
+  #duo-gym {
+    width: 45%;
+  }
+
+  #motivation-img {
+    width: 300px;
+    height: 600px;
+  }
+
+  #download-section h1 {
+    text-align: right;
+    font-size: 4rem;
+  }
+
+  #download-options {
+    font-size: 4rem;
+  }
+
+  #download-on {
+    font-size: 1.5rem;
+  }
+
+  #appstore, #google {
+    font-size: 1.8rem;
+  }
+
+  .download-buttons {
+    margin-top: 10px;
+    padding: 10px;
+    width: 180px;
+  }
+
+  #duo-backpack {
+    width: 40%;
+  }
+
+  #stories-text h1 {
+   font-size: 3rem; 
+  }
+
+  .stories-video {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  #nav-bar {
+    width: 100%;
+  }
+
+  #logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #logo a {
+    width: 150px;
+  }
+
+  #header-img {
+    position: relative; 
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  #lang-menu {
+    display: none; 
+  }
+
+  #main-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  #message {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-message {
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #main-subtitle {
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  #start-learning {
+    text-align: center;
+  }
+
+  #duo-gym {
+    width: 45%;
+    text-align: center;
+  }
+
+  #duo-gym img {
+    display: block;
+    width: 100%; 
+  }
+
+  #about-section {
+    padding-bottom: 50px;  
+  }
+
+  .about-class1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .about-class2 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+
+  .about-heading {
+   font-size: 3.4rem;
+   text-align: center;
+   padding-bottom: 20px;
+  }
+
+  .stories-subtitle {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .about-video img {
+    width: 200px;
+    height: 355px;
+  } 
+
+  #motivation-img {
+    height: 355px;
+  }
+
+  #download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding-top: 50px;
+  }
+
+  #download-options {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  #download-on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #duo-backpack {
+    display: flex;
+    order: 3;
+    padding-right: 20px;
+  }
+
+  .stories-video {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  #stories-text h1 {
+    font-size: 3rem; 
+  }
+
+  .stories-video {
+    width: 80%;
+  }
+
+  .stories-subtitle {
+    padding-top: 20px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  #nav-bar {
+    width: 100%;
+  }
+
+  #header-img {
+    position: relative; 
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  #lang-menu {
+    display: none; 
+  }
+
+  #main-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  #message {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  #main-message {
+    font-size: 4.5rem;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #main-subtitle {
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  #start-learning {
+    text-align: center;
+  }
+
+  #start-learning, #account-login {
+    width: 250px;
+    font-size: 1.5rem;
+  }
+
+
+  #duo-gym {
+    width: 60%;
+    text-align: center;
+  }
+
+  #duo-gym img {
+    display: block;
+    width: 100%; 
+  }
+
+  #about-section {
+    padding-bottom: 50px;  
+  }
+
+  .about-class1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .about-class2 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+
+  .about-heading {
+   font-size: 3.4rem;
+   text-align: center;
+   padding-bottom: 20px;
+  }
+
+  .about-subtitle {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .about-video img {
+    width: 200px;
+    height: 355px;
+  } 
+
+  #motivation-img {
+    height: 355px;
+  }
+
+  #languages-section {
+    display: none; 
+  }
+
+  #download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  #download-options h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #download-on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  #duo-backpack {
+    display: none;
+  }
+
+  #stories-section {
+    display: none;
+  }
+
+  #footer-container {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 30px;
+  }
+
+}
