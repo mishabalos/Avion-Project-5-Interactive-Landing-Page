@@ -14,7 +14,7 @@ This project is a responsive product landing page built based on specific user s
   * ensures a smooth experience across devices with a sticky navbar, media queries for responsiveness, and the use of CSS flexbox for layout flexibility
   * each element is designed to provide a cohesive and interactive user journey, from exploring the product to submitting contact information.
 
-![Screenshot 2024-09-24 at 2 18 41 PM](https://github.com/user-attachments/assets/8596df06-0114-48c9-bea0-682ca32a5ef5)
+![Screenshot 2024-09-24 at 2 20 21 PM](https://github.com/user-attachments/assets/b8c1bef4-b651-4159-bd0a-7a1c6090bf0d)
 
 [Live-Demo-Duolingo-Clone-Landing-Page](https://misha-duolingo-landing-page.netlify.app/) 
 
