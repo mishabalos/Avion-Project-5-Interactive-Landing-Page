@@ -5,9 +5,6 @@
 ### OBJECTIVE
 A Duolingo Clone Interactive Landing Page created with HTML, CSS, and Javascript.
 
-### SCENARIO
-This project is a responsive product landing page built based on specific user stories to enhance the user experience. 
-
 ### FEATURES:
   * a structured header with a navigation bar and a logo, allowing users to easily navigate through different sections
   * an embedded product video and a functional email form with HTML5 validation
