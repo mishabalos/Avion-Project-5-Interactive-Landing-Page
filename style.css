@@ -7,17 +7,17 @@
 /* <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000 */
 
-.nunito-<uniquifier> {
+.nunito-uniquifier {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
 /*<uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 300 to 700 */
 
-.fredoka-<uniquifier> {
+.fredoka-uniquifier {
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
