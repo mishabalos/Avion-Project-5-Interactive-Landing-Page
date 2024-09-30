@@ -235,10 +235,10 @@ header {
   background-color: white;
   width: 250px;
   margin: 10px auto;
-  z-index: 1;
+  /* z-index: 1; */
   padding: 10px;
   border-radius: 30px;
-  top: 55px;
+  top: 35px;
   box-shadow: 0px 5px 0px 0px #777777;
 }
 
@@ -263,7 +263,7 @@ header {
 /* ABOUT SECTION:  */
 
 #about-section {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,7 +272,12 @@ header {
   height: 100%;
 }
 
+#about-1 {
+  padding-top: 50px; 
+}
+
 .about-class1, .about-class2 {
+  padding: 20px; 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -805,8 +810,7 @@ input::placeholder {
   #main-section {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;    
+    height: 100%; 
   }
 
   #message {
@@ -815,6 +819,8 @@ input::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0px;
+    padding-bottom: 150px; 
   }
 
   #main-message {
@@ -826,7 +832,7 @@ input::placeholder {
   #main-subtitle {
     font-size: 1.8rem;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     text-align: center;
   }
 
@@ -837,11 +843,16 @@ input::placeholder {
   #duo-gym {
     width: 45%;
     text-align: center;
+    padding-top: 100px;
   }
 
   #duo-gym img {
     display: block;
     width: 100%; 
+  }
+
+  #hi {
+    font-size: 3rem;
   }
 
   #about-section {
@@ -858,6 +869,11 @@ input::placeholder {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 50px;
+  }
+
+  .about-text1, .about-text2 {
+    padding-bottom: 30px;
+    text-align: center;
   }
 
   .about-heading {
@@ -887,10 +903,11 @@ input::placeholder {
     align-items: center;
     text-align: center;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
-  #download-options {
+  #download-options h1 {
     font-size: 3.5rem;
     text-align: center;
   }
@@ -901,12 +918,11 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 40px;
   }
 
   #duo-backpack {
-    display: flex;
-    order: 3;
-    padding-right: 20px;
+    display: none; 
   }
 
   .stories-video {
@@ -934,7 +950,11 @@ input::placeholder {
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
+
+  #video {
+    display: none;
+  }
 
   #nav-bar {
     width: 100%;
@@ -1078,4 +1098,30 @@ input::placeholder {
     padding-left: 30px;
   }
 
+}
+
+@media (max-width: 320px) {
+
+  #hi {
+    font-size: 2rem;
+    width: 90%; 
+  }
+
+  #duo-gym img{
+    padding-top: 30px;
+  }
+
+  .about-class1, .about-class2 {
+    padding: 10px; 
+    text-align: center;
+  }
+
+  .about-text1, .about-text2 {
+    text-align: center;
+    width: 200px;
+  }
+
+  .about-heading {
+    font-size: 35px; 
+  }
 }
